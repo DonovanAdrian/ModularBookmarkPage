@@ -2,9 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/bookmark.png">
+    <link href="css/main.css" rel="stylesheet" type="text/css"/>
     <title>Bookmark</title>
+
+    <script src="js/main.js" type="text/javascript"></script>
+
+    <div class="topnav">
+        <ul>
+            <li><div class="cropIcon"><img class="imgIcon" src="img/giftyicon.png"></div></li>
+            <div class="break"></div>
+            <li><a onclick="navigation(0)" id="homeNote">Home</a></li>
+            <li><a onclick="navigation(1)" id="checklistNote">Checklists</a></li>
+            <li><a class="active" onclick="navigation(2)" id="bookmarkNote">Bookmarks</a></li>
+            <li><a onclick="navigation(3)" id="databaseNote">Database</a></li>
+        </ul>
+    </div>
 </head>
 <body>
+
+<ul id="bookmarkContainer" class="dataList">
+    <li class="dataItem" id="TestData">Loading...</li>
+</ul>
 
 </body>
 </html>
